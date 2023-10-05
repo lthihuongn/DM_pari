@@ -15,7 +15,7 @@ char demander_action(float solde) {
     }
 }
 
-float jouer_un_tour(float solde) {
+float jouer(float solde) {
     char action = demander_action(solde);
 
     if (action == 'R') {
@@ -56,7 +56,7 @@ int main() {
     printf("Vous commencez avec %.2f$.\n", solde);
 
     while (solde > 0.00) {
-        solde = jouer_un_tour(solde);
+        solde = jouer(solde);
     }
 
     printf("Le jeu est termine.\n");
