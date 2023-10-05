@@ -35,7 +35,7 @@ float jouer(float solde) {
         int resultat = rand() % 2;
 
         if (resultat == 1) {
-            solde += mise*2;
+            solde += mise;
             printf("Felicitations ! Vous avez double votre mise. Votre solde actuel est de %.2f$.\n", solde);
         } else {
             solde -= mise;
